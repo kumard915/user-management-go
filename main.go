@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"user-management/config"
 	"user-management/routes"
 
@@ -14,5 +15,6 @@ func main() {
 
 	routes.UserRoutes(r)
 
-	r.Run(":8080")
+	r.Run(":8081")
+	fmt.Println("running at 8081")
 }
